@@ -21,13 +21,9 @@ const BookTicket = () => {
     const dispatch = useDispatch();
 
     const handleClickBookTicket = useCallback(() => {
-        NavigationActions.showLoading();
         dispatch(bookTicketMovie({ movie: params }));
-        setTimeout(() => {
-            NavigationActions.hideLoading();
-            NavigationActions.navigate(HOME_SCREEN, { index: 2 });
-            setDisableButton(params.id);
-        }, 2000);
+        NavigationActions.navigate(HOME_SCREEN, { index: 2 });
+        setDisableButton(params.id);
     }, [dispatch, setDisableButton, params]);
 
     if (!params || disableButton === params.id) {
