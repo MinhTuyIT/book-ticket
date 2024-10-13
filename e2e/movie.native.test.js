@@ -59,7 +59,7 @@ describe('Book Ticket', () => {
       .toBeVisible()
       .withTimeout(2000);
     // Check Status button Book ticket
-    await expect(element(by.text('Watched'))).toBeVisible();
+    await expect(element(by.text('Booked'))).toBeVisible();
     // Click tab live movie
     await element(by.id(testIDs.TAB_VIEW_MOVIE)).atIndex(0).tap();
   });
@@ -90,7 +90,7 @@ describe('Book Ticket', () => {
       .toBeVisible()
       .withTimeout(2000);
     // Check Status button Book ticket
-    await expect(element(by.text('Watched')).atIndex(1)).toBeVisible();
+    await expect(element(by.text('Booked')).atIndex(1)).toBeVisible();
     // Click Bottom tab Book ticket
     await element(by.id(testIDs.BOTTOM_TAB_BOOK_TICKET)).atIndex(0).tap();
     // check empty ticket when click bottom tab book ticket

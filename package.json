@@ -7,7 +7,7 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "setup": "rm -rf node_modules yarn.lock && yarn install && cd ios && rm -rf pods podfile.lock && install && cd ..",
+    "setup": "rm -rf node_modules yarn.lock && yarn install",
     "detox:ios:debug:build": " detox build --configuration ios.sim.debug",
     "detox:ios:debug:test": "detox test --configuration ios.sim.debug",
     "detox:android:debug:build": "detox build --configuration android.emu.debug",

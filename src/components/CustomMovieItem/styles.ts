@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
     borderColor: '#cdcdcd',
     borderRadius: 5,
     paddingVertical: 2.5,
+    height: 30,
   },
   btnBookTicket: {
     borderWidth: 1,

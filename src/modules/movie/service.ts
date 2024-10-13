@@ -1,4 +1,4 @@
-import {movies} from '../../data';
+import {movies} from '../../constants/data';
 
 export const getListMovie = async (page: number, limit: number) => {
   try {

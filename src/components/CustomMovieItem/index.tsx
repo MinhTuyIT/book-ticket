@@ -60,7 +60,7 @@ const CustomMovieItem = (props: IMovie & { favoriteTestID?: string; bookTestID?:
                             style: !isBooked && styles.hightLight,
                         }}
                         style={[styles.btn, styles.btnBook, !isBooked && styles.hightLight]}
-                        title={isBooked ? 'Watched' : 'Book ticket'} />
+                        title={isBooked ? 'Booked' : 'Book ticket'} />
                 </View>
             </View>
         </View>
