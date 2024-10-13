@@ -9,6 +9,14 @@ const styles = StyleSheet.create({
     width: WIDTH,
     height: WIDTH,
   },
+  title: {
+    fontSize:20,
+    color: colors.CONTENT,
+    fontWeight: '700',
+    lineHeight: 32,
+    marginTop: 10,
+    marginHorizontal: 12,
+  },
   vTime: {
     flexDirection: 'row',
     marginTop: 12,

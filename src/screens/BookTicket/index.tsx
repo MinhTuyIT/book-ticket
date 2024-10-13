@@ -36,6 +36,7 @@ const BookTicket = () => {
         <SafeAreaView edges={['top']} style={styles.container}>
             <ScrollView>
                 <Image source={{ uri: params.thumbnail }} style={styles.img} />
+                <Text style={styles.title}>{params.title}</Text>
                 <View style={styles.vTime}>
                     <View style={styles.infoTime}>
                         <Text style={styles.titleTime}>{'Launch date'}</Text>
